@@ -4,6 +4,11 @@
 use yii\helpers\Url;
 ?>
 
+
+<?php
+print_r($dir);
+?>
+
 <style type="text/css">
 
 .gallery-container h1 {

@@ -13,7 +13,6 @@ use yii\base\Model;
  */
 class CategoryModel extends Model
 {
-    public nameDir = '';
     /*
     Получаем фоток из этих директорий
     */
@@ -25,6 +24,6 @@ class CategoryModel extends Model
     Получаем имена директорий
     */
     public function getDirs(){
-        getcwd();
+        return getcwd();
     }
 }

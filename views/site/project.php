@@ -6,118 +6,140 @@ use yii\helpers\Url;
 
 <style type="text/css">
 
-.container.gallery-container {
-    background-color: #fff;
-    color: #35373a;
-    min-height: 100vh;
-    border-radius: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
-}
-
 .gallery-container h1 {
     text-align: center;
     margin-top: 70px;
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
+    color: #58595a;
 }
 
 .gallery-container p.page-description {
     text-align: center;
-    max-width: 800px;
-    margin: 25px auto;
-    color: #888;
+    margin: 30px auto;
     font-size: 18px;
+    color: #85878c;
 }
 
 .tz-gallery {
     padding: 40px;
 }
 
-.tz-gallery .lightbox img {
-    width: 100%;
+.tz-gallery .thumbnail {
+    padding: 0;
     margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-}
-
-
-.tz-gallery .lightbox img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
-
-.tz-gallery img {
+    background-color: #fff;
     border-radius: 4px;
+    border: none;
+    transition: 0.15s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
 }
 
 .baguetteBox-button {
     background-color: transparent !important;
 }
-
-
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    .container.gallery-container {
-        border-radius: 0;
-    }
-}
+    
 </style>
-
 
 <div class="container gallery-container">
 
-    <h1>Проекты</h1>
+    <h1>Модели</h1>
     
     <div class="tz-gallery">
 
         <div class="row">
+
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Park">
-                </a>
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/park.jpg">
+                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Park">
+                    </a>
+                    <div class="caption">
+                        <h3>Проект такой-то</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Bridge">
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <a class="lightbox" href="../images/tunnel.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Tunnel">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/coast.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Coast">
-                </a>
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/bridge.jpg">
+                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Проект такой-то</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/rails.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Rails">
-                </a>
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/tunnel.jpg">
+                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                        <h3>Проект такой-то</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/traffic.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Traffic">
-                </a>
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/coast.jpg">
+                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Проект такой-то</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/rocks.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Rocks">
-                </a>
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/rails.jpg">
+                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Rails">
+                    </a>
+                    <div class="caption">
+                        <h3>Проект такой-то</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/benches.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Benches">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../images/sky.jpg">
-                    <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Sky">
-                </a>
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/traffic.jpg">
+                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Traffic">
+                    </a>
+                    <div class="caption">
+                        <h3>Проект такой-то</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
             </div>
         </div>
 

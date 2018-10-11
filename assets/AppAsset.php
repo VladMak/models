@@ -24,6 +24,7 @@ class AppAsset extends AssetBundle
         'css/style.css',
         'css/bootstrap.min.css',
         'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+        'css/contact.css'
     ];
     public $js = [
         'js/jquery-3.3.1.slim.min.js',

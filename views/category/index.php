@@ -74,7 +74,6 @@ use yii\helpers\Url;
 </style>
 
 <div class="container gallery-container">
-
     <h1><?php echo $titlePage; ?></h1>
     
     <div class="tz-gallery">
@@ -84,10 +83,22 @@ use yii\helpers\Url;
 
             <?php  
             foreach ($dir as $key => $value) {
+                if(isset($id)){ ?>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="">
+                        <img src="<?php echo Url::base() . '/' . Url::to('img/starkids/projects/') . $id . '/' . $photo[$key]; ?>" alt="Park">
+                    </a>
+                </div>
+            </div>
+
+            <?php
+                }else{
             ?>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a class="lightbox" href="../images/park.jpg">
+                    <a class="lightbox" href="<?php echo Url::to(['category/single', 'uri' => explode('/', Url::to())[4], 'id' => $value]); ?>">
                         <img src="<?php echo Url::base() . '/' . Url::to('img/starkids/projects/') . $value . '/' . $photo[$key]; ?>" alt="Park">
                     </a>
                     <div class="caption">
@@ -97,6 +108,7 @@ use yii\helpers\Url;
                 </div>
             </div>
             <?php
+                }
             }
             ?>
             

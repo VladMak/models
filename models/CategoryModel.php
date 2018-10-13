@@ -19,12 +19,15 @@ class CategoryModel extends Model
     /*
     Получаем фоток из этих директорий
     */
-    public function getPhotos(){
+    public function getPhotos($id){
         $masDirs = $this->getDirs();
         $masPhoto = [];
-        for ($i=0; $i < count($masDirs); $i++) { 
-            for ($j=2; $j < count(scandir(Url::to('img/starkids/' . $this->dirName . '/'  . $masDirs[$i]))); $j++) { 
-                array_push($masPhoto, scandir(Url::to('img/starkids/' . $this->dirName . '/'  . $masDirs[$i]))[$j]);
+        for ($i=0; $i < count($masDirs); $i++) {
+            if($id === $masDirs[$i]){
+                for ($j=2; $j < count(scandir(Url::to('img/starkids/' . $this->dirName . '/'  . $masDirs[$i]))); $j++) { 
+                    array_push($masPhoto, scandir(Url::to('img/starkids/' . $this->dirName . '/'  . $masDirs[$i]))[$j]);
+                } 
+            
             }
         }
 

@@ -18,12 +18,20 @@ class CategoryController extends Controller
         return $this->render('index', ['dir' => $mas, 'photo' => $photo, 'titlePage' => 'Модели']);
     }
 
-    public function actionProject()
+    public function actionProjects()
     {
     	$model = new CategoryModel();
     	
     	$mas = $model->getDirs('projects');
     	$photo = $model->getPhoto();
         return $this->render('index', ['dir' => $mas, 'photo' => $photo, 'titlePage' => 'Проекты']);
+    }
+
+    public function actionSingle($uri, $id){
+    	$model = new CategoryModel();
+    	
+    	$mas = $model->getDirs($uri);
+    	$photos = $model->getPhotos($id);
+        return $this->render('index', ['dir' => $photos, 'photo' => $photos, 'titlePage' => 'Проекты' ,'id' => $id]);
     }
 }

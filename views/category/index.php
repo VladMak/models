@@ -4,11 +4,6 @@
 use yii\helpers\Url;
 ?>
 
-
-<?php
-print_r($dir);
-?>
-
 <style type="text/css">
 
 .gallery-container h1 {
@@ -69,85 +64,44 @@ print_r($dir);
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
+.lightbox img{
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
 	
 </style>
 
 <div class="container gallery-container">
 
-    <h1>Модели</h1>
+    <h1><?php echo $titlePage; ?></h1>
     
     <div class="tz-gallery">
 
         <div class="row">
 
+
+            <?php  
+            foreach ($dir as $key => $value) {
+            ?>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <a class="lightbox" href="../images/park.jpg">
-                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Park">
+                        <img src="<?php echo Url::base() . '/' . Url::to('img/starkids/projects/') . $value . '/' . $photo[$key]; ?>" alt="Park">
                     </a>
                     <div class="caption">
-                        <h3>Модель такая-то</h3>
+                        <h3><?php echo $value; ?></h3>
                         <p>Описание модели</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="../images/bridge.jpg">
-                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Bridge">
-                    </a>
-                    <div class="caption">
-                        <h3>Модель такая-то</h3>
-                        <p>Описание модели</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="../images/tunnel.jpg">
-                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Tunnel">
-                    </a>
-                    <div class="caption">
-                        <h3>Модель такая-то</h3>
-                        <p>Описание модели</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="../images/coast.jpg">
-                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Coast">
-                    </a>
-                    <div class="caption">
-                        <h3>Модель такая-то</h3>
-                        <p>Описание модели</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="../images/rails.jpg">
-                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Rails">
-                    </a>
-                    <div class="caption">
-                        <h3>Модель такая-то</h3>
-                        <p>Описание модели</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="../images/traffic.jpg">
-                        <img src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="Traffic">
-                    </a>
-                    <div class="caption">
-                        <h3>Модель такая-то</h3>
-                        <p>Описание модели</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <?php
+            }
+            ?>
+            
 
     </div>
 
+</div>
 </div>

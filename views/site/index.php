@@ -2,32 +2,34 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Url;
+
+$slider = [];
+//print_r(scandir(Url::home() . 'img/slider'));
+for($i = 2; $i < count(scandir(getcwd() . '\img\slider')); $i++){
+	array_push($slider, scandir(getcwd() . '\img\slider')[$i]);
+}
+
+$slider_path = Url::home() . 'img/slider/';
+$slider_desc = [
+	"ДЕТСКОЕ МОДЕЛЬНОЕ АГЕНТСТВО И ШКОЛА МОДЕЛЕЙ",
+	"ДЛЯ ДЕТЕЙ ОТ 3-Х ДО 16-ТИ ЛЕТ",
+	"STAR KIDS  - ИСПОЛНЯЕТ МЕЧТЫ!",
+];
 ?>
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img class="d-block w-100" src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="First slide">
-			<div class="black_wrapper"></div>
-			<div class="carousel-caption d-none d-md-block caption_slider">
-				<h2>ДЕТСКОЕ МОДЕЛЬНОЕ АГЕНТСТВО И ШКОЛА МОДЕЛЕЙ</h2>
-				<p>ДЛЯ ДЕТЕЙ ОТ 3-Х ДО 16-ТИ ЛЕТ</p>
+		<?php
+		for ($i=0; $i < count($slider); $i++) { ?>
+			<div class="carousel-item <?php if($i == 0){ echo "active"; } ?>">
+				<img class="d-block w-100" src="<?php echo $slider_path . $slider[$i];?>" alt="First slide">
+				<div class="black_wrapper"></div>
+				<div class="carousel-caption d-none d-md-block caption_slider">
+					<h2><?php echo $slider_desc[$i]; ?></h2>
+				</div>
 			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="First slide">
-			<div class="black_wrapper"></div>
-			<div class="carousel-caption d-none d-md-block caption_slider">
-				<h2>STAR KIDS  - ИСПОЛНЯЕТ МЕЧТЫ!</h2>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo Url::base().'/'; ?>img/starkids/main_page/9H8A3845.JPG" alt="First slide">
-			<div class="black_wrapper"></div>
-			<div class="carousel-caption d-none d-md-block caption_slider">
-				<h2>ДЕТСКОЕ МОДЕЛЬНОЕ АГЕНТСТВО И ШКОЛА МОДЕЛЕЙ</h2>
-				<p>ДЛЯ ДЕТЕЙ ОТ 3-Х ДО 16-ТИ ЛЕТ</p>
-			</div>
-		</div>
+			<?php
+		}
+		?>
 	</div>
 	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -97,6 +99,43 @@ use yii\helpers\Url;
 		</div>
 		<div class="col-md-3">
 			
+		</div>
+	</div>
+
+
+	<div class="row about_middle_block div_violet">
+		<div class="col-md-12">
+			<h2 class="h2_main">
+				Свяжитесь с нами!
+			</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 mail_form">
+			<form action="#" method="post">
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Name" type="text" id="input-13" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-13">
+						<span class="input__label-content input__label-content--chisato" data-content="Имя">Имя</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Email" type="email" id="input-14" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-14">
+						<span class="input__label-content input__label-content--chisato" data-content="Email">Почта</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Subject" type="text" id="input-15" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-15">
+						<span class="input__label-content input__label-content--chisato" data-content="Телефон">Телефон</span>
+					</label>
+				</span>
+				<textarea name="Message" placeholder="Сообщение..." required=""></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+
 		</div>
 	</div>
 </div>
@@ -231,6 +270,43 @@ use yii\helpers\Url;
 			</div>
 
 			
+		</div>
+
+
+		<div class="row about_middle_block div_violet">
+			<div class="col-md-12">
+				<h2 class="h2_main">
+					Свяжитесь с нами!
+				</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 mail_form">
+				<form action="#" method="post">
+					<span class="input input--chisato">
+						<input class="input__field input__field--chisato" name="Name" type="text" id="input-13" placeholder=" " required="">
+						<label class="input__label input__label--chisato" for="input-13">
+							<span class="input__label-content input__label-content--chisato" data-content="Имя">Имя</span>
+						</label>
+					</span>
+					<span class="input input--chisato">
+						<input class="input__field input__field--chisato" name="Email" type="email" id="input-14" placeholder=" " required="">
+						<label class="input__label input__label--chisato" for="input-14">
+							<span class="input__label-content input__label-content--chisato" data-content="Email">Почта</span>
+						</label>
+					</span>
+					<span class="input input--chisato">
+						<input class="input__field input__field--chisato" name="Subject" type="text" id="input-15" placeholder=" " required="">
+						<label class="input__label input__label--chisato" for="input-15">
+							<span class="input__label-content input__label-content--chisato" data-content="Телефон">Телефон</span>
+						</label>
+					</span>
+					<textarea name="Message" placeholder="Сообщение..." required=""></textarea>
+					<input type="submit" value="Отправить">
+				</form>
+
+			</div>
 		</div>
 	</div>
 </div>

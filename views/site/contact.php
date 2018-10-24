@@ -55,8 +55,8 @@ use yii\helpers\Url;
 				<div class="contact_grid_right">
 					<h4>Социальные сети</h4>
 					<div>
-						<a href=""><i class="fab fa-vk"></i></a>
-						<a href=""><i class="fab fa-vk"></i></a>
+						<a href=""><i class="fab fa-vk"></i>starkids_irk</a>
+						<a href=""><i class="fab fa-vk"></i>58-68-48</a>
 						<a href=""><i class="fab fa-vk"></i></a>
 						<a href=""><i class="fab fa-vk"></i></a>
 					</div>

@@ -15,7 +15,7 @@ body a {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	max-width: 236px;
+	max-width: 32%;
 	width: calc(100% - 0em);
 	vertical-align: top;
 }

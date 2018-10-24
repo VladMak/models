@@ -234,6 +234,43 @@ use yii\helpers\Url;
 			</div>
 		</div>
 	</div>
+
+
+	<div class="row about_middle_block div_violet">
+		<div class="col-md-12">
+			<h2 class="h2_main">
+				Свяжитесь с нами!
+			</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 mail_form">
+			<form action="#" method="post">
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Name" type="text" id="input-13" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-13">
+						<span class="input__label-content input__label-content--chisato" data-content="Имя">Имя</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Email" type="email" id="input-14" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-14">
+						<span class="input__label-content input__label-content--chisato" data-content="Email">Почта</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Subject" type="text" id="input-15" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-15">
+						<span class="input__label-content input__label-content--chisato" data-content="Телефон">Телефон</span>
+					</label>
+				</span>
+				<textarea name="Message" placeholder="Сообщение..." required=""></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+
+		</div>
+	</div>
 </div>
 
 <div class="container-fluid div_violet otstup_div concept_educ">
@@ -292,6 +329,43 @@ use yii\helpers\Url;
 			<p>Занятия в школе моделей развивают ребёнка с разных сторон  и это неоспоримый факт.  Раскройте внутренний потенциал ваших детей уже сегодня  вместе со школой моделей STAR KIDS!</p>
 			<p>После прохождения обучения в школе моделей самые перспективные ученики принимаются в группы профессиональной подготовки на продвинутый курс.</p>
 			<p>Не упустите время – запишите ребёнка в школу моделей STAR KIDS!</p>
+		</div>
+	</div>
+
+
+	<div class="row about_middle_block div_violet">
+		<div class="col-md-12">
+			<h2 class="h2_main">
+				Свяжитесь с нами!
+			</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 mail_form">
+			<form action="#" method="post">
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Name" type="text" id="input-13" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-13">
+						<span class="input__label-content input__label-content--chisato" data-content="Имя">Имя</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Email" type="email" id="input-14" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-14">
+						<span class="input__label-content input__label-content--chisato" data-content="Email">Почта</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Subject" type="text" id="input-15" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-15">
+						<span class="input__label-content input__label-content--chisato" data-content="Телефон">Телефон</span>
+					</label>
+				</span>
+				<textarea name="Message" placeholder="Сообщение..." required=""></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+
 		</div>
 	</div>
 </div>

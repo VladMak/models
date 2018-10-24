@@ -65,6 +65,42 @@ use yii\helpers\Url;
 		</div>
 	</div>
 
+	<div class="row about_middle_block div_violet">
+		<div class="col-md-12">
+			<h2 class="h2_main">
+				Свяжитесь с нами!
+			</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 mail_form">
+			<form action="#" method="post">
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Name" type="text" id="input-13" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-13">
+						<span class="input__label-content input__label-content--chisato" data-content="Имя">Имя</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Email" type="email" id="input-14" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-14">
+						<span class="input__label-content input__label-content--chisato" data-content="Email">Почта</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Subject" type="text" id="input-15" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-15">
+						<span class="input__label-content input__label-content--chisato" data-content="Телефон">Телефон</span>
+					</label>
+				</span>
+				<textarea name="Message" placeholder="Сообщение..." required=""></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+
+		</div>
+	</div>
+
 
 	<div class="row about_middle_block div_violet">
 		<div class="col-md-12">
@@ -85,7 +121,7 @@ use yii\helpers\Url;
 
 				<li>
 					<p>
-						<strong>Это надёжно.</strong> Каждый филиал координируется головным офисов,  штат педагогов состоит из 35 квалифицированных сотрудников. Над развитием компании работают исполнительные и технические директора, отдел продаж, фотографы, видеографы, стилисты и десятки специалистов на аутсорсинге.  Для вас работает горячая линия, куда вы можете обратиться в любой момент.
+						<strong>Это надёжно.</strong> Каждый филиал координируется головным офисом,  штат педагогов состоит из 35 квалифицированных сотрудников. Над развитием компании работают исполнительные и технические директора, отдел продаж, фотографы, видеографы, стилисты и десятки специалистов на аутсорсинге.  Для вас работает горячая линия, куда вы можете обратиться в любой момент.
 					</p>
 				</li>
 
@@ -119,8 +155,45 @@ use yii\helpers\Url;
 				<h2 class="h2_main">А В 2018 ГОДУ СТУДИЯ ЗАПУСТИЛА 6 НОВЫХ НАПРАВЛЕНИЙ. ТЕПЕРЬ ВАШ РЕБЕНОК СМОЖЕТ РАЗВИВАТЬСЯ ПО-НАСТЯЩЕМУ ВСЕСТОРОННЕ! </h2>
 			</div>
 			<div>
-				<p>Подробнее о дополнительных направлениях можно прочитать в разделе Дополнительные курсы</p>
+				<p>Подробнее о дополнительных направлениях можно прочитать в разделе <a href="#">Дополнительные курсы</a></p>
 			</div>
+		</div>
+	</div>
+
+
+	<div class="row about_middle_block div_violet">
+		<div class="col-md-12">
+			<h2 class="h2_main">
+				Свяжитесь с нами!
+			</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 mail_form">
+			<form action="#" method="post">
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Name" type="text" id="input-13" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-13">
+						<span class="input__label-content input__label-content--chisato" data-content="Имя">Имя</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Email" type="email" id="input-14" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-14">
+						<span class="input__label-content input__label-content--chisato" data-content="Email">Почта</span>
+					</label>
+				</span>
+				<span class="input input--chisato">
+					<input class="input__field input__field--chisato" name="Subject" type="text" id="input-15" placeholder=" " required="">
+					<label class="input__label input__label--chisato" for="input-15">
+						<span class="input__label-content input__label-content--chisato" data-content="Телефон">Телефон</span>
+					</label>
+				</span>
+				<textarea name="Message" placeholder="Сообщение..." required=""></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+
 		</div>
 	</div>
 

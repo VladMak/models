@@ -41,16 +41,10 @@ AppAsset::register($this);
                         <div>
                             <span class="number"><i class="fas fa-phone"></i><?php echo $header[0]['first_number']; ?></span>
                         </div>
-                        <div>
-                            <span class="desc"><?php echo $header[0]['first_desc']; ?></span>
-                        </div>
                     </div>
                     <div class="col-md-4 header_numbers">
                         <div>
                             <span class="number"><i class="fas fa-phone"></i><?php echo $header[0]['second_number']; ?></span>
-                        </div>
-                        <div>
-                            <span class="desc"><?php echo $header[0]['second_desc']; ?></span>
                         </div>
                     </div>
                 </div>
